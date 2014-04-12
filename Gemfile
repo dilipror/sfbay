@@ -35,12 +35,12 @@ gem "capybara-webkit", "~> 1.1.0"
 gem "nokogiri"
 
 group :assets do
-  gem "therubyracer"
   gem "less-rails"
   gem 'twitter-bootstrap-rails'
 end
 
 group :development do
+  gem "therubyracer"
   gem 'better_errors'
   gem "binding_of_caller"
   # Use mysql as the database for Active Record
