@@ -32,9 +32,7 @@ end
 
 gem "capybara"
 gem "capybara-webkit", "~> 1.1.0"
-gem "selenium-webdriver"
 gem "nokogiri"
-gem "pry-debugger"
 
 group :assets do
   gem "therubyracer"
@@ -47,7 +45,7 @@ group :development do
   gem "binding_of_caller"
   # Use mysql as the database for Active Record
   gem 'mysql2'
-
+  gem "pry-debugger"
 end
 
 # Use ActiveModel has_secure_password
