@@ -1,4 +1,11 @@
 Sfbay::Application.routes.draw do
+  
+  resources :scrape, :only => [:create, :index] do
+    get :scrape_date
+    post :search, on: :collection
+  end
+
+  root 'scrape#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
